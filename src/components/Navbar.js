@@ -16,7 +16,26 @@ export default class Navbar extends Component {
           <a className="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/">Link</a>
+          <a className="nav-link" href="/technology">technology</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/business">business</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/entertainment">entertainment</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/general">general</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/health">
+          health</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/science">science</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/sports">sports</a>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -42,3 +61,8 @@ export default class Navbar extends Component {
     )
   }
 }
+
+
+
+
+
