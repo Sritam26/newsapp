@@ -58,13 +58,13 @@ export default class News extends Component {
     return (
       <div>
         this is the news
-        <div className="container my-5" >
+        <div className="container my-5 " >
           <div className="row">
            {this.state.articles.map((element)=>{
 
            return <div className="col-md-4"key={element.urlToImage}>
 
-        <Newsitem title={element.title?element.title.slice(0,46):""} desc={element.description?element.description.slice(0,98):""} image={element.urlToImage} newsurl={element.url}/>
+        <Newsitem title={element.title?element.title.slice(0,46):""} description={element.description} image={element.urlToImage} Author={element.author} publish={element.publishedAt} newsurl={element.url} source={element.source.name}/>
             </div>
   })}
             
@@ -74,8 +74,8 @@ export default class News extends Component {
 
         </div>
         <div className="container d-flex justify-content-evenly">
-        <button type="button" class="btn btn-dark" disabled={this.state.page<=1} onClick={this.previousclick}>-Previous</button>
-        <button type="button" class="btn btn-dark"  onClick={this.nextclick}>Next-</button>
+        <button type="button" className="btn btn-dark" disabled={this.state.page<=1} onClick={this.previousclick}>-Previous</button>
+        <button type="button" className="btn btn-dark"  onClick={this.nextclick}>Next-</button>
         </div>
 
       </div>
